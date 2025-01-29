@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'norsebold';
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+        url('fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@import 'node_modules/modern-normalize/modern-normalize.css';
+
+:root {
+  line-height: 1.5;
+}
+
+* {
+  margin: 0;
+}
+
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img {
+  display: block;
+  max-inline-size: 100%;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-column {
+    flex: 1;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+}
+
+.right-column {
+    flex: 2;
+}
+
+.padding-column {
+    width: 200px;
+    background: rgb(11, 14, 34)
+}
+
+.footer {
+    margin-top: auto;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.footer a {
+    color: inherit;
+}
