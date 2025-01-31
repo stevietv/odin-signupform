@@ -45,7 +45,7 @@ img {
 }
 
 .left-column {
-    flex: 1;
+    flex: 1.2;
     background-image: url(images/background.jpg);
     background-size: cover;
 }
@@ -57,6 +57,23 @@ img {
 .padding-column {
     width: 200px;
     background: rgb(11, 14, 34)
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35%;    
+    font-family: norsebold;
+    font-size: 6em;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    height: 15%;
+    padding: 15px;
+}
+
+.title img {
+    max-height: 100%;
 }
 
 .footer {
