@@ -9,27 +9,19 @@
 
 @import 'node_modules/modern-normalize/modern-normalize.css';
 
-:root {
-  line-height: 1.5;
-}
-
 * {
   margin: 0;
-}
-
-ol[role="list"], ul[role="list"] {
-  list-style: none;
-  padding-inline: 0;
-}
-
-h1, h2, h3, h4, h5 {
-  font-size: inherit;
-  font-weight: inherit;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 img {
   display: block;
   max-inline-size: 100%;
+}
+
+body {
+    font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 
@@ -52,10 +44,11 @@ img {
 
 .right-column {
     flex: 2;
+    background-color: whitesmoke;
 }
 
 .padding-column {
-    width: 200px;
+    width: 280px;
     background: rgb(11, 14, 34)
 }
 
@@ -63,7 +56,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 35%;    
+    margin-top: 40%;    
     font-family: norsebold;
     font-size: 6em;
     color: white;
@@ -80,8 +73,118 @@ img {
     margin-top: auto;
     color: whitesmoke;
     text-align: center;
+    font-size: 0.8em;
+    padding-bottom: 10px;
 }
 
 .footer a {
     color: inherit;
+}
+
+.header {
+    margin-top: 15%;
+    font-weight: 600;
+    font-size: 1.4em;
+    padding-bottom: 30px;
+    margin-right: 15%;
+}
+
+
+.padded {
+    padding: 30px 50px;
+
+}
+
+.signup-form-box {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    box-shadow: 0px 6px 6px lightgray;
+    background-color: white;
+}   
+
+.signup-form{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.signup-form-box label {
+    text-transform: uppercase;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 0.7em;
+    letter-spacing: .15rem;
+    padding-bottom: 4px
+}
+
+.signup-form-box h2 {
+    padding-bottom: 20px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.formfield {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-right: 40px;
+    padding-bottom: 20px;
+}
+
+.button {
+    background-color: #596D48;
+    border: none;
+    color: white;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.login {
+    font-size: 1.2rem;
+}
+
+.login a{
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+*,*:focus,*:hover{
+    outline:none;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  padding: 5px 10px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input:focus      
+{
+    border: 1px solid blue;
+    box-shadow: 6px 6px 6px lightgray;
+}
+
+input:invalid
+{
+    border: 1px solid red;
+}
+
+
+input {
+    border: 1px solid #E5E7EB;
 }
